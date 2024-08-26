@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: darkcyan;
+}
+
+.grade-calculator {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 1px black;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.box input {
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box input:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+button.calc-btn {
+    font-size: 18px;
+    color: white;
+    background: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+button.calc-btn:hover {
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.demo {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .grade-calculator {
+        padding: 15px;
+    }
+
+    .box input {
+        padding: 10px 15px;
+    }
+
+    button.calc-btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .demo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box input {
+        padding: 8px 10px;
+    }
+
+    button.calc-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .demo {
+        font-size: 14px;
+    }
+}
