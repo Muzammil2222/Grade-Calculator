@@ -10,19 +10,19 @@ function calc() {
     document.getElementById('demo1').innerHTML = `Total marks = ${sum}`;
     
     
-    let percentage = (sum / 500) * 100;  
+    let percentage = parseFloat((sum / 500) * 100);  
     document.getElementById('demo2').innerHTML = `Percentage = ${percentage}%`;
 
     
     if (percentage >= 90) {
-        document.getElementById('demo2').innerHTML += `<br>Excellent`;
+        document.getElementById('demo2').innerHTML += `<br>Excellent &#x2661;`;
     } else if (percentage >= 80) {
-        document.getElementById('demo2').innerHTML += `<br>Very Good`;
+        document.getElementById('demo2').innerHTML += `<br>Very Good &#11088;`;
     } else if (percentage >= 60) {
-        document.getElementById('demo2').innerHTML += `<br>Good`;
+        document.getElementById('demo2').innerHTML += `<br>Good &#128077;`;
     } else if (percentage >= 40) {
-        document.getElementById('demo2').innerHTML += `<br>Need Hard Work`;
+        document.getElementById('demo2').innerHTML += `<br>Need Hard Work &#128078;`;
     } else {
-        document.getElementById('demo2').innerHTML += `<br>Fail`;
+        document.getElementById('demo2').innerHTML += `<br>Fail ❌`;
     }
 }
